@@ -42,7 +42,7 @@ export const ScheduleEmailButton = () => {
       }
 
       // Send a POST request
-      await axios.post("http://localhost:8080/sendEmail", createData, {
+      await axios.post("https://emailautomationtool.onrender.com/sendEmail", createData, {
         headers: {
           "Content-Type": "application/json",
         },
