@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* LeadsPopup.css */
+
+.insert-button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .MuiDialogContent-root {
+    position: relative;
+    padding-bottom: 60px; /* Leave space for the Insert button */
+  }
+  
+
+  /* edit and delete node styling */
+
+  .editOrDelete{
+    position: absolute;
+    display: flex;
+    top: -10px;
+    right: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+}
+
+.editOrDelete .edit{
+  font-size: 1.5rem;
+    color: blue;
+}
+
+.editOrDelete .delete{
+  font-size: 1.5rem;
+    color: red;
+}
+
+.editOrDelete:hover{
+   opacity: 1;
+}
+
+
+/* Save And Schedule btn styling */
+
+.save{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.save button{
+  padding: .8rem 1rem;
+  border: 3px solid rgba(0, 255, 255, 0.577);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 255, 0.662);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.save button:hover{
+  opacity: 0.8;
+}

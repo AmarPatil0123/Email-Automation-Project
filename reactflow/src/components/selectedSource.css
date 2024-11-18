@@ -1,0 +1,46 @@
+.container{
+    width: 250px;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.63);
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem .8rem;
+}
+
+.icons{
+    padding:1rem;
+    border-color: yellow;
+    background-color: rgba(243, 131, 131, 0.489);
+    font-size: 1rem;
+}
+
+.data{
+    width: 70%;
+}
+
+.lists{
+    width: 100%;
+    color: red;
+}
+
+.editOrDelete{
+    position: absolute;
+    display: flex;
+    top: -10px;
+    right: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+}
+
+.editOrDelete .delete{
+    color: red;
+}
+
+.editOrDelete:hover{
+   opacity: 1;
+}

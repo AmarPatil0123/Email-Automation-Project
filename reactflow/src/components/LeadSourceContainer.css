@@ -1,0 +1,45 @@
+/* Backdrop to dim background */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.LeadSourceContainer {
+    width: 870px;
+    height: 650px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.89);
+    z-index: 1000;
+    position: relative;
+}
+
+.close-btn {
+    text-align: right;
+    border-bottom: 1px solid black;
+    padding-bottom: .5rem !important;
+    cursor: pointer;
+}
+
+.close-btn i {
+    padding: .5rem;
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.source-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
