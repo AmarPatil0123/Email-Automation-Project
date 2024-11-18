@@ -23,7 +23,7 @@ async function connectToDB() {
 connectToDB();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://emailautomationtool-co0n.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
